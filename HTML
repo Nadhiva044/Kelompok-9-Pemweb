@@ -1,1 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossy Gossip Make Up</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts -->
+
+    <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">Glossy Gossip<span></span></a>
+
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+        </nav>
+        
+
+
+    </header>
+
+    <!-- header section ends -->
+
+
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Flawless Makeup</h3>
+            <span>Natural & Beauty</span>
+            <p>Temukan pesona kecantikan sejati dengan rekomendasi makeup terbaik dari kami. </p>
+        </div>
+    </section>
+
+
+
+    <!-- home section ends -->
+
+    <!-- about section starts -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"><span> about </span> us </h1>
+
+        <div class="row">
+
+            <div class="image-container">
+                <img src="aboutus.jpg" alt="background">
+            </div>
+
+            <div class="content">
+                <h3>why choose us?</h3>
+                <p>Glossy Gossip adalah platform ulasan makeup yang dirancang untuk membantu menemukan produk kecantikan terbaik yang sesuai dengan kebutuhan kalian. 
+                    Kami menyediakan review mendalam dan jujur mengenai berbagai produk makeup, mulai dari powder, lipstik, hingga maskara. Kami percaya bahwa memilih produk makeup yang tepat adalah langkah penting dalam memperkuat kepercayaan diri.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+
+
+
+
+    <!-- product section starts -->
+
+    <section class="products" id="products">
+        <h1 class="heading">latest <span>products</span></h1>
+
+<h2 class="main-description">Concealer</h2>
+
+<div class="box-container">
+    <!-- Produk pertama -->
+    <div class="box" ondblclick="scrollToReview('review-pixy')">
+        <div class="flex-container">
+            <div class="image">
+                <img src="conceler pixy.jpg" alt="Concealer Pixy" width="200px">
+            </div>
+            <div class="content">
+                <h3>UV Whitening 4 Beauty Benefits Concealing Base</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Produk kedua -->
+    <div class="box" ondblclick="scrollToReview('review-wardah')">
+        <div class="flex-container">
+            <div class="image">
+                <img src="conceler wardah.jpg" alt="Concealer Wardah" width="200px">
+            </div>
+            <div class="content">
+                <h3>The New Wardah Lightening Liquid Concealer</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<h2 class="main-description">Cushion</h2>
+
+<div class="box-container">
+    <!-- Produk pertama -->
+    <div class="box" ondblclick="scrollToReview('review-instaperfect')">
+        <div class="flex-container">
+            <div class="image">
+                <img src="cushion instaperfect.jpg" alt="Cushion instaperfect" width="200px">
+            </div>
+            <div class="content">
+                <h3>Instaperfect Skincover Air Cushion</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Produk kedua -->
+    <div class="box" ondblclick="scrollToReview('review-TrueToSkin')">
+        <div class="flex-container">
+            <div class="image">
+                <img src="cushion truetoskin.jpg" alt="Cushion True To Skin" width="200px">
+            </div>
+            <div class="content">
+                <h3>True To Skin Skinlike Porefecting Cushion</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<h2 class="main-description">Blush On</h2>
+
+<div class="box-container">
+    <!-- Produk pertama -->
+    <div class="box" ondblclick="scrollToReview('review-pinkflash')">
+        <div class="flex-container">
+            <div class="image">
+                <img src="blush on pinkflash 2.jpg" alt="Blush On Pinkflash" width="200px">
+            </div>
+            <div class="content">
+                <h3>PinkFlash OhMyHoney Blush On Powder</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Produk kedua -->
+    <div class="box" ondblclick="scrollToReview('review-Implora')">
+        <div class="flex-container">
+            <div class="image">
+                <img src="blush implora.jpg" alt="Implora Cheek Blossom Blush On" width="200px">
+            </div>
+            <div class="content">
+                <h3>Implora Cheek Blossom Blush On</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 class="main-description">Compact Powder</h2>
+
+<div class="box-container">
+    <!-- Produk pertama -->
+    <div class="box" ondblclick="scrollToReview('review-dazzleme')">
+        <div class="flex-container">
+            <div class="image">
+                <img src="compactpowder dazzleme.jpg" alt="Compact Powder Dazzle Me" width="200px">
+            </div>
+            <div class="content">
+                <h3>Compact Powder Dazzle Me</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Produk kedua -->
+    <div class="box" ondblclick="scrollToReview('review-Luxcrime')">
+        <div class="flex-container">
+            <div class="image">
+                <img src="compactpowder luxcrime.jpg" alt="Compact Powder Dazzle Me" width="200px">
+            </div>
+            <div class="content">
+                <h3>Luxcrime Mini Blur and Cover Two Way Cake</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<h2 class="main-description">Loose Powder</h2>
+
+<div class="box-container">
+    <!-- Produk pertama -->
+    <div class="box" ondblclick="scrollToReview('review-Hanasui')">
+        <div class="flex-container">
+            <div class="image">
+                <img src="loosepowder hanasui.jpg" alt="Loose Powder Hanasui" width="200px">
+            </div>
+            <div class="content">
+                <h3>Hanasui Perfect Fit Setting Powder</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Produk kedua -->
+    <div class="box" ondblclick="scrollToReview('review-dazzleme')">
+        <div class="flex-container">
+            <div class="image">
+                <img src="loosepowder dazzleme.jpg" alt="Loose Powder Dazzle Me" width="200px">
+            </div>
+            <div class="content">
+                <h3>Dazzle Me Always Setting Loose Powder</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<h2 class="main-description">Eyebrow</h2>
+
+<div class="box-container">
+    <!-- Produk pertama -->
+    <div class="box" ondblclick="scrollToReview('review-wardah')">
+        <div class="flex-container">
+            <div class="image">
+                <img src="eyebrow wardah.jpg" alt="Eyebrow Wardah" width="200px">
+            </div>
+            <div class="content">
+                <h3>WARDAH Eyexpert Matic Brow Definer</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Produk kedua -->
+    <div class="box" ondblclick="scrollToReview('review-Viva')">
+        <div class="flex-container">
+            <div class="image">
+                <img src="eyebrow viva.jpg" alt="Eyebrow Viva" width="200px">
+            </div>
+            <div class="content">
+                <h3>Viva Queen Eye Brow Pencil with SPOOLIE</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<h2 class="main-description">Maskara</h2>
+
+<div class="box-container">
+    <!-- Produk pertama -->
