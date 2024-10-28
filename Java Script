@@ -1,1 +1,6 @@
-
+function scrollToReview(reviewId) {
+    const reviewElement = document.getElementById(reviewId);
+    if (reviewElement) {
+        reviewElement.scrollIntoView({ behavior: 'smooth' });
+    }
+}
