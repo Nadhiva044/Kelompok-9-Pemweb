@@ -13,3 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
     toggler.addEventListener('change', function () {
         navbar.style.display = toggler.checked ? 'block' : 'none';
     });
+
+
+    navbar.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function () {
+            toggler.checked = false;
+            navbar.style.display = 'none';
+        });
+    });
+});
