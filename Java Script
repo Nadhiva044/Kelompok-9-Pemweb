@@ -4,3 +4,12 @@ function scrollToReview(reviewId) {
         reviewElement.scrollIntoView({ behavior: 'smooth' });
     }
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggler = document.getElementById('toggler');
+    const navbar = document.querySelector('.navbar');
+
+    toggler.addEventListener('change', function () {
+        navbar.style.display = toggler.checked ? 'block' : 'none';
+    });
