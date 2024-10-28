@@ -270,3 +270,140 @@ header .fa-bars {
 
 
 .products {
+
+text-align: center;
+}
+
+.heading {
+    margin-bottom: 40px;
+}
+
+.product-category {
+    font-size: 28px;
+    text-align: center;
+    color:  #FF69B4;
+    margin-bottom: 30px;
+}
+
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px; 
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 20px; 
+}
+
+
+.box {
+    border: 2px solid #FFB6C1; 
+    border-radius: 15px; 
+    padding: 20px;
+    max-width: 300px; 
+    width: 100%; 
+    text-align: center;
+    background-color: #FFF0F5; 
+    box-shadow: 0 4px 8px #e973cf; 
+    margin-bottom: 30px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.box:hover {
+    transform: translateY(-5px); 
+}
+
+
+.image img {
+    display: block;
+    margin: 0 auto;
+    width: 100%; 
+    height: auto;
+    max-width: 350px; 
+    transition: transform 0.3s ease; 
+}
+
+.image img:hover {
+    transform: scale(1.2); 
+    box-shadow: 0 4px 20px #e973cf; 
+}
+
+
+.content h3 {
+    font-size: 18px; 
+    color: #800566; 
+    margin: 5px 0; 
+}
+
+
+.description {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #dd41bb; 
+}
+
+
+.main-description {
+    font-size: 48px; 
+    color: #E594C2; 
+    margin-bottom: 50px;
+    text-align: center; 
+    font-weight: bold; 
+    letter-spacing: 2px; 
+}
+
+
+.review .box-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px; 
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 20px; 
+}
+
+
+.review .box-container .box {
+    flex: 1 1 45%; 
+    background-color: #ffe4e1; 
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1); 
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 350px; 
+    margin: 1rem; 
+    text-align: center;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.review .box-container .box:hover {
+    transform: scale(1.05); 
+}
+
+
+.review .box-container .box .content {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #333; 
+    margin-bottom: 2rem;
+}
+
+
+.review .box-container .box img {
+    max-width: 100px;
+    border-radius: 0; 
+    margin-bottom: 1rem;
+}
+
+.box .stars i {
+    color: #FFD700; 
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .review .box-container .box {
+        flex: 1 1 100%; 
+        max-width: none; 
+    }
+}
