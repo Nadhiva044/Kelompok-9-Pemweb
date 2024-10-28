@@ -22,3 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+window.addEventListener('resize', function () {
+        if (window.innerWidth >= 768) {
+            navbar.style.display = 'flex'; // tampilkan navbar di layar besar
+            toggler.checked = false; // reset toggler agar tidak tercentang
+        } else {
+            navbar.style.display = toggler.checked ? 'block' : 'none'; // tampilkan sesuai toggler di layar kecil
+        }
+    });
+});
